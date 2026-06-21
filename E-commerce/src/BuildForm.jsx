@@ -13,12 +13,8 @@ function App(){
     function onSubmit(data){
         //now the event is gone but we still have access to the form data through the register function. We can use the register function to access the values of the input fields and handle the form submission accordingly.
         //to keep track of changes in the form and prevent the default behavior of the form submission, we can use the event.preventDefault() method. This method prevents the form from being submitted and allows us to handle the form data in our own way. In this case, we are simply logging the form data to the console, but we could also send it to a server or perform other actions as needed.
-        event.preventDefault();
+        //event.preventDefault();
         alert(`Form submitted with email: ${register("email")}, password: ${register("password")}, name:${data.name}`);
-
-     
-
-    
     }
 
     return(

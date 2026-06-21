@@ -7,6 +7,342 @@
 
 ---
 
+## 📚 Notes Index — Find Any Topic Fast
+
+> Click a file name to open it. Key topics listed under each file.
+
+---
+
+### [00 — Introduction](./00_introduction.md)
+- What is React, Why React
+- Virtual DOM & Reconciliation
+- React vs Vue vs Angular
+- React's Core Concepts Overview
+- React Philosophy (Declarative, Component-Based)
+
+---
+
+### [01 — Setup & Tooling](./01_setup_and_tooling.md)
+- Create project with **Vite** (recommended)
+- Create React App (legacy)
+- Project folder structure
+- Understanding key files (`main.jsx`, `App.jsx`, `index.html`)
+- npm scripts (`dev`, `build`, `preview`)
+- Vite config customization
+- Recommended VS Code extensions
+
+---
+
+### [02 — JSX](./02_jsx.md)
+- What is JSX, what it compiles to
+- JSX Rules (single root, className, self-closing tags)
+- JSX vs HTML differences
+- Embedding JavaScript in JSX (`{}`)
+- Inline styles in JSX
+- JSX Fragments (`<> </>`)
+- Comments in JSX
+
+---
+
+### [03 — Components](./03_components.md)
+- What is a Component
+- Functional Components
+- Class Components (legacy)
+- Types of Components
+- Importing & Exporting components
+- Composing components
+- Component best practices & file organization
+
+---
+
+### [04 — Props](./04_props.md)
+- What are Props, passing & receiving
+- Types of props (string, number, boolean, object, function, children)
+- Default Props
+- The `children` prop
+- Spreading Props
+- PropTypes — runtime type checking
+- Prop Drilling (problem)
+- Real-world card component example
+
+---
+
+### [05 — State](./05_state.md)
+- What is State, why not just use a variable
+- `useState` Hook
+- Multiple state variables
+- Updating objects in state
+- Updating arrays in state
+- Initial state values
+- Derived / computed state
+- State lifting (sharing state between components)
+- State batching (React 18+)
+
+---
+
+### [06 — useEffect & Component Lifecycle](./06_useEffect.md)
+- Component Lifecycle (mount, update, unmount)
+- `useEffect` hook syntax
+- Dependency array (`[]`, `[dep]`, no array)
+- Cleanup function (why it matters)
+- Common patterns: fetch on mount, fetch on dep change, timers, event listeners, WebSockets
+- useEffect execution order
+- Common mistakes (missing deps, infinite loops, async useEffect)
+- `useLayoutEffect`
+- When NOT to use useEffect
+
+---
+
+### [07 — Events](./07_events.md)
+- Basic event handling (`onClick`, `onChange`, `onSubmit`)
+- The Event object (`e.target`, `e.preventDefault`)
+- Common event types (mouse, keyboard, form, focus)
+- Passing arguments to event handlers
+- Event propagation & `e.stopPropagation()`
+- Event handler naming conventions
+
+---
+
+### [08 — Conditional Rendering](./08_conditional_rendering.md)
+- What is conditional rendering
+- Method 1: `if/else`
+- Method 2: Ternary operator `? :`
+- Method 3: Logical AND `&&`
+- Method 4: Nullish coalescing `??`
+- Method 5: Return `null` (render nothing)
+- Conditional `className`
+
+---
+
+### [09 — Lists & Keys](./09_lists_and_keys.md)
+- Rendering lists with `.map()`
+- Rendering lists of objects
+- The `key` prop — why it's critical
+- Key rules & best practices
+- Extracting list item components
+- Nested lists
+- Filtering & sorting lists
+- Generating unique IDs for new items
+- Complete interactive Todo app example
+
+---
+
+### [10 — Forms](./10_forms.md)
+- Controlled vs Uncontrolled components
+- Controlled components (value + onChange)
+- Basic form with multiple fields
+- Different input types (text, checkbox, radio, select, textarea)
+- Form validation
+- Form reset
+- Uncontrolled components with `useRef`
+- Form accessibility
+- React Hook Form library (recommended for complex forms)
+
+---
+
+### [11 — Hooks](./11_hooks.md)
+- What are Hooks & Rules of Hooks
+- `useState`, `useEffect` (recap)
+- `useRef` — DOM refs & persistent values
+- `useMemo` — memoize expensive calculations
+- `useCallback` — memoize functions
+- `useReducer` — complex state logic
+- `useId` — generate unique IDs
+- `useTransition` — mark non-urgent updates
+- `useDeferredValue` — defer rendering
+- Custom Hooks (how to build your own)
+- Custom Hook patterns
+
+---
+
+### [12 — Context API](./12_context_api.md)
+- The problem: Prop Drilling
+- Creating and using Context (`createContext`, `useContext`)
+- Complete Context pattern with state
+- Multiple Contexts
+- Theme Context — real-world example
+- Shopping Cart Context — full example
+- Context performance (avoiding re-renders)
+- Context vs Props vs State Management
+
+---
+
+### [13 — React Router](./13_react_router.md)
+- What is React Router, basic setup (v6)
+- `<Link>` and `<NavLink>`
+- Route parameters (`useParams`)
+- Query parameters (`useSearchParams`)
+- Nested routes
+- Programmatic navigation (`useNavigate`)
+- `useLocation` hook
+- Lazy loading routes (code splitting)
+- Protected routes (authentication)
+- Complete routing example
+
+---
+
+### [14 — State Management](./14_state_management.md)
+- Why external state management
+- Option 1: **Zustand** (simple & modern ✅ recommended)
+- Zustand middleware (persist, devtools)
+- Option 2: **Redux Toolkit** (enterprise-level)
+- RTK Query — data fetching made simple
+- Choosing the right solution
+
+---
+
+### [15 — Performance](./15_performance.md)
+- Understanding React rendering
+- `React.memo` — prevent unnecessary re-renders
+- `useMemo`, `useCallback` in depth
+- Code splitting & lazy loading (`React.lazy`, `Suspense`)
+- Virtualization — rendering large lists
+- Bundle optimization
+- Image optimization
+- Profiling performance (React DevTools)
+- Common performance mistakes to avoid
+- Performance checklist
+
+---
+
+### [16 — Error Handling](./16_error_handling.md)
+- Types of errors in React
+- Error Boundaries (class-based)
+- `react-error-boundary` library (recommended)
+- Strategic error boundaries
+- Handling async errors (API calls)
+- Global error handling
+- Custom error handler hook
+- Error reporting services
+
+---
+
+### [17 — API Integration](./17_api_integration.md)
+- `fetch()` — GET, POST, PUT, DELETE
+- Axios — basic usage, axios instance, interceptors
+- TanStack Query (React Query) — `useQuery`, `useMutation`
+- Infinite queries (load more / pagination)
+- Environment variables (`VITE_API_URL`)
+- Custom `useFetch` hook
+
+---
+
+### [18 — Advanced Patterns](./18_advanced_patterns.md)
+- Higher-Order Components (HOC)
+- Render Props Pattern
+- Compound Components
+- Control Props Pattern
+- Provider Pattern
+- Slots Pattern (flexible composition)
+- Headless Components
+
+---
+
+### [19 — TypeScript with React](./19_typescript.md)
+- Why TypeScript with React
+- Setting up Vite + TypeScript
+- Basic TypeScript types
+- Typing component props
+- Typing `useState`, `useEffect`, `useRef`, `useCallback`
+- Typing `useReducer`
+- Typing event handlers
+- Typing Context
+- Generic components
+- Utility types
+- Practical example: Typed API hook
+
+---
+
+### [20 — Testing](./20_testing.md)
+- Testing philosophy
+- Testing stack (Jest, React Testing Library, MSW)
+- Writing your first test
+- Querying elements
+- Testing user interactions
+- Testing async components
+- Testing Context
+- Testing custom hooks
+- Mocking with MSW (Mock Service Worker)
+- Jest DOM matchers
+- Running tests
+- Common testing mistakes
+
+---
+
+### [21 — Next.js](./21_nextjs.md)
+- What is Next.js
+- App Router vs Pages Router
+- App Router file conventions
+- Creating pages
+- Layouts
+- Navigation
+- Data fetching (SSR, SSG, ISR)
+- Rendering strategies
+- API routes
+- Middleware
+- Image optimization
+- Metadata & SEO
+- Code splitting strategy
+
+---
+
+### [22 — Animations](./22_animations.md)
+- Animation options in React
+- CSS Transitions (simplest)
+- CSS Keyframes
+- State-based CSS animations
+- Framer Motion (library)
+- Loading skeleton animations
+- Number counter animation
+- Notification toast animations
+
+---
+
+### [23 — Accessibility (a11y)](./23_accessibility.md)
+- What is Accessibility & why it matters
+- Semantic HTML first
+- ARIA attributes & roles
+- Keyboard navigation
+- Color and contrast
+- Images & alt text
+- Form accessibility
+- Skip navigation links
+- Screen reader only text
+- Accessible component examples
+- Testing accessibility
+- Accessibility checklist
+
+---
+
+### [24 — Best Practices](./24_best_practices.md)
+- Project structure best practices
+- Component best practices
+- Performance best practices
+- Code quality tips
+- Security best practices
+- Common anti-patterns to avoid
+- React 18+ features to know
+
+---
+
+### [25 — Using APIs in React (Practical)](./25_api_in_react.md)
+- Environment variables (`.env`, `VITE_API_URL`)
+- `fetch()` — GET, POST, PUT, PATCH, DELETE with examples
+- Sending auth token (JWT) in headers
+- Axios install & basic usage
+- Reusable axios instance (`src/utils/api.js`) with interceptors
+- Core pattern: `useEffect` + `useState` (loading / error / data)
+- Fetch on user action (button / form submit)
+- Custom `useFetch` hook
+- Understanding data flow step-by-step
+- Accessing nested data with optional chaining `?.`
+- Dependent requests (fetch B after A)
+- Parallel requests with `Promise.all`
+- Full CRUD example (Products page)
+- Common errors and fixes table
+
+---
+
 ## What is React?
 
 React is a **JavaScript library** (not a framework) built by **Meta (Facebook)** for building **user interfaces (UI)**. It focuses specifically on the **View layer** of an application.
