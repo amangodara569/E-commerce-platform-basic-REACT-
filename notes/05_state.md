@@ -11,6 +11,10 @@
 
 **State** is a component's internal memory — data that a component needs to remember and that can change over time.
 
+a built in react object that is used to contain data or info about component
+a components state can change over time , if it changes it re renders the component
+
+
 When state changes, React **automatically re-renders** the component to reflect the new data.
 
 ```jsx
