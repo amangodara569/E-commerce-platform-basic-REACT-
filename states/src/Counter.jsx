@@ -2,9 +2,14 @@ import { useState } from "react";
 export default function Counter(){
 
     const [count, setcount] = useState(0);
+    const [set, setset] = useState(init); //we shall never pass a function to in useState in that . otherwise it will
+    //always be rendered again and again no - init()
 
     function incCount(){
         setcount(count+1); //it will trigger  re-render of the component and update the count value in dom
+        setcount((count)=>{
+            return count+1;
+        })
         console.log(count);
     }
     return (
@@ -16,4 +21,5 @@ export default function Counter(){
             <button onClick={incCount}>Increment</button>
         </>
     )
-}
+};
+

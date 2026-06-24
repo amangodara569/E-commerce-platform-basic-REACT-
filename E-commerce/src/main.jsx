@@ -4,6 +4,7 @@ import { BrowserRouter } from 'react-router-dom'; //for routes
 import './index.css'
 import App from './App.jsx'
 import Apps from './Apps.jsx'; //for routes
+import Ludo from '../../cards/src/Ludo.jsx';
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
@@ -14,6 +15,8 @@ createRoot(document.getElementById('root')).render(
     <BrowserRouter>
       <Apps/>
     </BrowserRouter>
+
+    <Ludo/>
 
     
   </StrictMode>,
